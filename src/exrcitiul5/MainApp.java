@@ -1,5 +1,7 @@
 package exrcitiul5;
+
 import java.util.Random;
+
 public class MainApp {
 
     public static void main(String[] args) {
@@ -8,9 +10,9 @@ public class MainApp {
 
         System.out.println("numar generat: " + num);
         if (Fibonacci(num)) {
-            System.out.println("numarul " + num + " este numar din sirul Fibonacci .");
+            System.out.println("numarul " + num + " este numar din sirul Fibonacci.");
         } else {
-            System.out.println("numarul  " + num + " nu este din sirul Fibonacci.");
+            System.out.println("numarul " + num + " nu este din sirul Fibonacci.");
         }
     }
 
@@ -18,8 +20,9 @@ public class MainApp {
         if (n == 0 || n == 1) {
             return true;
         }
+
         int a = 0, b = 1;
-        while (b < n) {
+        for (int i = 2; b < n; i++) {
             int temp = b;
             b = a + b;
             a = temp;
